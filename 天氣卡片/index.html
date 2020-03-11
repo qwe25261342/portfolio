@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+body{
+    margin: 0;
+}
+.cards{
+    width: 200px;
+    border: 3px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+.card{
+    display: flex;
+    width: 100%;
+}
+.card img{
+    padding: 20px;
+    width: calc(100% - 40px);
+    height: 158px;
+}
+.text{
+    text-align:center;
+    width: 100%;
+}
+.box{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card_time{
+    text-align:center;
+}
+
+/* 雨天 https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRH1iwDlm5xYBsAinBhl9LtIxIjKUbJ84Q4VwGMm0uyJ4sp7IZG 
+晴天 https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSBJLX_yMrQCdrtszIKqUhyU9Dfgml8sWrX91D0dJkNMTJRQj7E
+
+
+*/
+</style>
+
+<body>
+
+    <div class="all">
+     <div class="card_time"></div>
+     <div class="box"></div>
+   </div>
+    <script>
+    var box = document.querySelector(".box");
+    fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-808D8435-973A-4511-9EAA-EBA2121C9683')
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(weather) {
+
+            var out_catch = weather.records.location
+            console.log(out_catch);
+
+            out_catch.forEach(out_catch => {
+                var citys = out_catch.locationName
+                
+                var Wx = out_catch.weatherElement[0].time[0].parameter.parameterName
+                
+                var MaxT = out_catch.weatherElement[4].time[0].parameter.parameterName
+
+                var MinT = out_catch.weatherElement[2].time[0].parameter.parameterName
+                
+                var CI = out_catch.weatherElement[3].time[0].parameter.parameterName
+               
+                var Img = out_catch.weatherElement[0].time[0].parameter.parameterValue
+                
+                
+                if(Img == 4 ||Img == 5||Img == 6||Img == 7){
+                    Imgs = "https://lh3.googleusercontent.com/proxy/mn2-jr8W9HBBi1HhD0pDJD9Bjlw9ZVPH7cWoM7D9FV31m1sM54_eWueHgf76VIVxAbG-AgrfY-k5UJBKGzPGanRbemRfKKBr2gwRe4z7uobLuCQCBhNYIx0";
+                }else if(Img == 1||Img == 2||Img == 3) {
+                    Imgs ="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSBJLX_yMrQCdrtszIKqUhyU9Dfgml8sWrX91D0dJkNMTJRQj7E"
+                }else {
+                    Imgs ="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRH1iwDlm5xYBsAinBhl9LtIxIjKUbJ84Q4VwGMm0uyJ4sp7IZG "
+                }
+                box.innerHTML+=
+                `
+                <div class="cards">
+                <div class="card">
+                    <img src="${Imgs}" alt="">
+                </div>
+                <div class="text">
+                    <h1>${citys}</h1>
+                    <h2>${Wx}</h2>
+                    <div>
+                        <span>${"最高溫" + MaxT + "C"}</span>
+                        <span>${"最低溫" +MinT + "C" }</span>
+                    </div>
+                    
+                </div>
+            </div>
+                `
+            });
+            
+        });
+        var card_time = document.querySelector(".card_time");
+        var today = new Date();
+        var day =  today.getFullYear() + "年" + (today.getMonth()+1) + "月" + today.getDate() + "日";
+        var time = today.getHours() + ":" + today.getMinutes()
+
+        card_time.innerHTML+=`<h2>${day} ${time}</h2>` 
+        
+    
+    
+
+    </script>
+
+</body>
+</html>

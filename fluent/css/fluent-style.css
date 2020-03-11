@@ -1,0 +1,477 @@
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.Flex {
+    display: flex;
+}
+
+.Fond-size-16 {
+    font-size: 20px;
+}
+h5{
+    font-size: 2em;
+}
+
+.Container {
+    width: 100%;
+    margin: auto;
+}
+
+
+.navbar-R {
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-M {
+    display: flex;
+    width: 25%;
+    align-items: center;
+}
+
+.navbar-L {
+    width: 15%;
+
+    display: flex;
+    align-items: center;
+}
+
+.Navbar {
+    width: 100%;
+    max-width: 1536px;
+    height: 68px;
+    display: flex;
+    margin: auto;
+}
+
+.Content {
+    width: 100%;
+    display: flex;
+    max-width: 1536px;
+    margin: 0 auto;
+    margin-top: 145px;
+    margin-bottom: 60px;
+}
+
+.cube {
+    position: relative;
+    flex: 1;
+}
+
+#top-line img {
+    position: absolute;
+    bottom: 120px;
+    left: 200px;
+}
+
+#btm-line img {
+    position: absolute;
+    top: 0px;
+    right: 200px;
+}
+
+.blue-title {
+    width: 410px;
+    flex: 0 0 auto;
+}
+
+.Text {
+    margin: 100px 0px 30px;
+}
+
+.cards {
+    width: 90%;
+    margin: auto;
+    max-width: 1536px;
+}
+.Box{
+    width:100%;
+    position: relative;
+    z-index: 1;
+    
+}
+.Box::before {
+    content: "";
+    width: 100vh;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background-color: rgb(34, 128, 200);
+}
+
+.Box::after{
+    content: "";
+    width: 100vh;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    background-color: rgb(95, 207, 99);
+}
+.card img {
+    width: 66px;
+    margin-bottom: 10vh;
+    margin-left: 30px;
+    margin-top: 10px;
+    
+    
+}
+
+.card {
+    width: 25%;
+}
+.blue{
+    background-color: rgb(37, 142, 222);
+}
+.jAHtCy {
+    background-color: rgb(79, 229, 255);
+}
+.lkSMNI {
+    background-color: rgb(207, 143, 255);
+}
+.beBMYy {
+    background-color: rgb(105, 229, 110);
+}
+.fXYdjx {
+    height: 48px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 auto;
+    padding: 0px;
+}
+.fXYdjx img{
+    width: 18px;
+    height: 13px;
+    margin: 0px 16px 0px 0px;
+}
+
+.manypeople{
+    width: 100%;
+    min-height: 768px;
+    background-image: url("/FD img/msft-verge-fluent.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.dtNxrw {
+    color: rgb(0, 0, 0);
+    font-size: 128px;
+    line-height: 150px;
+    font-weight: 600;
+    padding: 10px 20px 0px;
+}
+.Text-box{
+    margin: auto;
+    width: 90%;
+    max-width: 1536px;
+}
+.fNmtKl  {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0px;
+    display: inline-block;
+    padding: 40px 30px 0px;
+    
+}
+.flower-out{
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+}
+.flower-box{
+    position: relative;
+    width: 90%;
+    max-width: 1536px;
+    margin: auto;
+    background-color: rgb(25, 25, 25);
+}
+.rect{
+    position: absolute;
+    top: -200px;
+    right: 130px;
+}
+.white-rect{
+    position: absolute;
+    top: 570px;
+    left: 190px;
+}
+.flower{
+    margin: auto;
+    width: 600px;
+    padding: 60px 0;
+}
+.flower-text-box{
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    
+    justify-content: flex-end;
+}
+.flower-text{
+    width: 90%;
+    max-width: 1536px;
+    background-color: rgb(25, 25, 25);
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.mountain-out{
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+    position: relative;
+}
+.mountain-out img{
+    width: 100%;
+    
+}
+.mountain-title-box{
+    width: 100%;
+    position: absolute;
+    bottom: 80px;
+}
+.mountain-title{
+    width: 100%;
+    max-width: 1536px;
+    margin: auto;
+}
+.mountain-title h2{
+    color: rgb(25, 25, 25);
+    font-size: 128px;
+    line-height: 144px;
+    font-weight: 600;
+
+}
+.sky-box{
+    background-image: url('/FD img/clouds.jpg');
+    width: 100%;
+    min-height: 948px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.sky{
+    width: 90%;
+    max-width: 1536px;
+    margin: auto;
+    position: relative;
+}
+.cmaxoy {
+    position: absolute;
+    top: -280px;
+    right: -200px;
+    z-index: 2;
+    opacity: 1;
+}
+.fpFlWr {
+    position: absolute;
+    top: -250px;
+    right: -200px;
+    z-index: 1;
+}
+.facmeU {
+    position: absolute;
+    top: -100px;
+    left: -26px;
+    font-size: 395px;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.fLTIbj {
+    position: absolute;
+    top: 140px;
+    right: -30px;
+    font-size: 395px;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.khaky {
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    min-height: 820px;
+    position: relative;
+}
+.more-litle{
+    width: 90%;
+    max-width: 1536px;
+    margin: auto;
+    position: relative;
+}
+.hqRDey {
+    width: 100%;
+    padding: 140px 40px 0px 8px;
+}
+.fTiOJO {
+    color: rgb(0, 0, 0);
+    font-size: 128px;
+    line-height: 150px;
+    font-weight: 600;
+}
+.bZChdq {
+    width: 100%;
+    margin: 60px 0px 0px;
+}
+.bQrvIW {
+    width: 100%;
+    max-width: 384px;
+    padding: 0px 16px;
+    color: black;
+}
+.more-logo{
+    position: absolute;
+    top: 200px;
+    right: 0px;
+}
+.starsky-box{
+    background-image: url('https://www.microsoft.com/design/fluent/assets/images/space.jpg');
+    width: 100%;
+    min-height: 748px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.black-f{
+    position: absolute;
+    top: -95px;
+    left: 340px;
+}
+.starsky{
+    width: 90%;
+    max-width: 1536px;
+    margin: auto;
+    position: relative;
+}
+.white-rect2{
+    position: absolute;
+    top: -125px;
+    left: 620px;
+}
+.white-Hline{
+    position: absolute;
+    top: 185px;
+    left: 165px;
+}
+.white-rect3{
+    position: absolute;
+    top: 530px;
+    right: 85px;
+}
+.pink-line{
+    position: absolute;
+    top: 250px;
+    right: 220px;
+}
+.black-crad-out{
+    width: 100%;
+    background-color: black;
+    margin: 0px 0px 160px;
+}
+.black-crads{
+    width: 90%;
+    max-width: 1536px;
+    margin: auto;
+    display: flex;
+}
+.Text-white{
+    color: white;
+}
+.black{
+    background-color: black;
+    height: 350px;
+    display: flex;
+}
+.bnpuRQ {
+    background-color: rgb(57, 57, 57);
+    height: 350px;
+    display: flex;
+}
+.fXjUGf {
+    background-color: rgb(118, 118, 118);
+    height: 350px;
+    display: flex;
+}
+.lbvlsY {
+    background-color: rgb(204, 204, 204);
+    height: 350px;
+    display: flex;
+}
+.flex-1{
+    display: flex;
+    flex: 1;
+}
+
+
+.fa-medium{
+    flex: 0 0 auto;
+    margin: 0px 16px 0px 0px;
+} 
+
+.card-hover:hover{
+    background-color: white;
+    color: black;
+}
+
+.last-box{
+    width: 100%;
+    background-color: black;
+}
+.last{
+    width: 90%;
+    max-width: 1536px;
+    margin: auto;
+    display: flex;
+    padding: 0px 0px 200px;
+}
+.last-title{
+    width: 575px;
+    flex: 0 0 auto;
+}
+.last-text{
+    flex: 1 1 auto;
+    padding: 0px 330px 35px 208px;
+}
+.last-title h2{
+    font-size: 32px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 0px 0px 0px 16px;
+}
+.last-text a:hover{
+    color: rgb(150, 150, 150);
+}
+
+h2 {
+    font-size: 64px;
+    line-height: 80px;
+    color: rgb(79, 229, 255);
+    font-weight: 600;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0px 0px 24px;
+    word-wrap: break-word;
+}
+
+
+

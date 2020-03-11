@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+body{
+    background-color: darkgray;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab{
+    width: 600px;
+}
+.buttons{
+    display: flex;
+    background-color: gray;
+}
+.button{
+    flex: 1;
+    border: 3px solid black;
+}
+.contents{
+    background-color: gray;
+    border: 3px solid black;
+    border-top: 0;
+}
+.button:nth-child(1),.button:nth-child(2){
+    border-right:0 ;
+}
+.tab_content{
+    display: none;
+    
+}
+.tab_content.active{
+    display: block;
+    background-color: white;
+    padding: 30px 0;
+}
+.button.active{
+    display: block;
+    background-color: white;
+}
+
+</style>
+
+
+<body>
+    <div class="tab">
+        <div class="buttons">
+            <div id="btn" class="button" onclick="active_btn(0)">分頁一</div>
+            <div id="btn" class="button active " onclick="active_btn(1)">分頁二</div>
+            <div id="btn" class="button " onclick="active_btn(2)">分頁三</div>
+        </div>
+        <div class="contents">
+            <div id="content" class="tab_content ">
+                <h1>分頁一</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis optio incidunt saepe fuga placeat numquam et temporibus velit a quas!</p>
+            </div>
+            <div id="content" class="tab_content active">
+                <h1>分頁二</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente facere odit blanditiis nostrum aut? Labore.</p>
+            </div>
+            <div id="content" class="tab_content">
+                <h1>分頁三</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, temporibus!</p>
+            </div>
+        </div>
+    </div> 
+    <script>
+        btn = document.querySelectorAll('.button');
+        con = document.querySelectorAll('.tab_content');
+        function active_btn(number){
+            removeClass()
+            btn[number].classList.add('active');
+            con[number].classList.add('active');
+        }
+        
+        
+        function removeClass(){
+            act = document.querySelectorAll('.active');
+            for(i=0;i<act.length;i++){
+                act[i].classList.remove('active')
+        }
+    }
+
+    // var btn1 = document.getElementById("btn1");
+    // var btn2 = document.getElementById("btn2");
+    // var btn3 = document.getElementById("btn3");
+    
+    // var content1 = document.getElementById("content1");
+    // var content2 = document.getElementById("content2");
+    // var content3 = document.getElementById("content3");
+    
+    // btn1.onclick = function(){
+    //     removeClass()
+    //     content1.classList.add('active');
+    //     btn1.classList.add('active');
+    // }
+    // btn2.onclick = function(){
+    //     removeClass()
+    //     content2.classList.add('active');
+    //     btn2.classList.add('active');
+    // }
+    // btn3.onclick = function(){
+    //     removeClass()
+    //     content3.classList.add('active');
+    //     btn3.classList.add('active');
+    // }
+    
+
+    
+    </script>   
+</body>
+</html>

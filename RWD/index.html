@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    html {
+        scroll-behavior: smooth;
+    }
+    body{
+        margin: 0;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    #all{
+        background-image: url("img/view0.jpg");
+    }
+    #menu{
+        height: 100vh;
+        width: 366px;
+        background: rgba(0, 0, 0, 0.5);
+        /* justify-content: center; */
+        flex-direction:column;
+        align-items: center;
+    }
+    ul{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        list-style: none;
+        background-color: teal;
+        margin-bottom: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    #menu-phone{
+        width: 30px;
+        height: 30px;
+        background-color: tomato;
+        display: none;
+    }
+    #logo{
+        height: 150px;
+        width: 150px;
+        background-color: burlywood;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #content{
+        height: 100vh;
+        width: calc(100% - 366px);
+        justify-content: center;
+        align-items: center;
+    }
+    #big-box{
+        height: 570px;
+        width: 957px;
+        /* background-color: teal; */
+        justify-content: space-between;
+    }
+    #boxA{
+        height: 100%;
+        width: calc(33% - 5px);
+        background-image: url("img/view1.jpg");
+    }
+    #boxB{
+        height: 100%;
+        width: calc(34% - 10px);
+        background-image: url("img/view2.jpg");
+    }
+    #boxC{
+        height: 100%;
+        width: calc(33% - 5px);
+        background-image: url("img/view3.jpg");
+    }
+    @media(max-width: 1350px){
+        #big-box{
+            height: 570px;
+            width: 800px;
+            /* background-color: black; */
+            flex-wrap: wrap;
+        }
+        #boxA{
+            height: calc(50% - 10px);
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        #boxB{
+            height: 50%;
+            width: calc(50% - 5px);
+            margin: 0;
+            margin-right:10px;
+        }
+        #boxC{
+            height: 50%;
+            width: calc(50% - 5px);
+        }
+        
+    }
+    @media(max-width: 1166px){
+        #all{
+            flex-direction: column;
+        }
+        #menu{
+            width: 100%;
+            height: 100px;
+            flex-direction:unset;
+            justify-content:space-between;
+        }
+        #content{
+            width: 100%;
+            height: calc(100vh - 100px);
+        }
+        #big-box{
+            width: 700px;
+        }
+        #logo{
+            height: 80px;
+            width: 80px;
+            background-color: burlywood;
+            margin: 0;
+            margin-left: 50px;
+        }
+        ul{
+            display: flex;
+            /* flex-wrap: nowrap; */
+            margin-right: 50px;
+        }
+        li{
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
+    }
+    @media(max-width: 702px){
+        #big-box{
+            height: 150vh;
+            width: 100%;
+        }
+        #boxA{
+            height: 50vh;
+            width: 100%;
+            margin: 0;
+        }
+        #boxB{
+            height: 50vh;
+            width: 100%;
+            margin: 0;
+        }
+        #boxC{
+            height: 50vh;
+            width: 100%;
+        }
+        #content{
+            align-items: unset;
+        }
+        #menu{
+            justify-content: unset;
+            position:relative
+            
+        }
+        #menu-btm{
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 15px;
+            
+        }
+        #menu-phone{
+            display: block;
+            order: -2;
+            margin-right: calc(50% - 78px);
+            margin-left: 16px;
+        }
+        #menu-phone:hover ~ #menu-btm{
+            display: block;
+        }
+        #menu-btm:hover {
+            display: block;
+        }
+        #logo{
+            margin-left: 0;
+        }
+        ul{
+            display:unset;
+            
+        }
+        li{
+            
+            margin-bottom: 10px;  
+        }   
+    }  
+
+    .flex{
+        display: flex;
+    }
+    .box-set{
+        background-size:cover;
+        background-position: center; 
+    }
+    </style>
+</head>
+<body>
+    <div id="all" class="flex box-set">
+        <div id="menu" class="flex">
+            <div id="logo"></div>
+            <div id="menu-phone"></div>
+            <div id="menu-btm" >
+                <ul>
+                    <a href="img/view1.jpg">
+                        <li>AAA </li>
+                    </a>
+                    <li>BBB</li>
+                    <li>CCC</li>
+                </ulclass="flex">
+            </div>
+        </div>
+        <div id="content" class="flex  box-set">
+            <div id="big-box" class="flex">
+                <div id="boxA" class="box-set"></div>
+                <div id="boxB" class="box-set"></div>
+                <div id="boxC" class="box-set"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
