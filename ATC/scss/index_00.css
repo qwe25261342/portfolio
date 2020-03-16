@@ -1,0 +1,213 @@
+@charset "UTF-8";
+body {
+  height: 400vh;
+}
+
+body .container {
+  padding: 0;
+}
+
+body .all {
+  width: 100%;
+}
+
+body .all .navbar_out {
+  width: 100%;
+  height: 53px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .all .navbar_out .nav_box {
+  width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .all .navbar_out .nav_box .logo {
+  margin-right: 25vw;
+  margin-left: 20px;
+}
+
+body .all .navbar_out .nav_box .logo .Logo_style {
+  font-size: 48px;
+  line-height: 53px;
+  font-family: "Raleway";
+  color: black;
+  text-decoration: none;
+}
+
+body .all .navbar_out .nav_box .navbar_text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 80px;
+}
+
+body .all .navbar_out .nav_box .navbar_text a {
+  color: black;
+  text-decoration: none;
+}
+
+body .all .banner_out {
+  width: 100%;
+}
+
+body .all .banner_out .banner_img {
+  background-image: url("../img/封面2.1.jpg");
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+body .all .title_out {
+  width: 100%;
+}
+
+body .all .title_out .title_box {
+  max-width: 1140px;
+  position: relative;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+body .all .title_out .title_box .our_title {
+  font-family: "PT Sans";
+  font-size: 38px;
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+}
+
+body .all .title_out .title_box .story_title {
+  font-family: "PT Sans";
+  font-size: 34px;
+  color: white;
+  position: absolute;
+  top: 75px;
+  right: 45px;
+}
+
+body .all .our_story {
+  width: 100%;
+  max-width: 1140px;
+  padding-top: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+body .all .our_story .story_text {
+  padding-top: 100px;
+  font-family: "Noto Sans TC";
+  font-size: 18px;
+  color: white;
+}
+
+body .all .title_Out {
+  width: 100%;
+}
+
+body .all .title_Out .title_Box {
+  max-width: 1140px;
+  position: relative;
+  margin: auto;
+  padding-bottom: 20px;
+  height: 150px;
+}
+
+body .all .title_Out .title_Box .OUR_SURROUNDINGS_title {
+  font-family: "PT Sans";
+  font-size: 38px;
+  color: white;
+  position: absolute;
+  top: 30px;
+}
+
+body .all .title_Out .title_Box .SURROUNDINGS_title {
+  font-family: "PT Sans";
+  font-size: 32px;
+  color: white;
+  position: absolute;
+  top: 75px;
+  left: 60px;
+}
+
+body .all .mask:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+body .all .mask:hover h5 {
+  display: none;
+}
+
+body .all .Lease_out {
+  padding-top: 100px;
+  width: 100%;
+}
+
+body .all .Lease_out .Lease_img {
+  background-image: url("../img/場地預約.jpg");
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+body .all .Lease_out .Lease_img .Lease_title {
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
+  font-family: "Noto Sans TC";
+  font-size: 32px;
+  color: black;
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+body .all .Lease_menu_out {
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .all .Lease_menu_out .Lease_menu_box {
+  width: 90%;
+  max-width: 1140px;
+}
+
+body .all .Lease_menu_out .Lease_menu_box .Lease_menu_but a {
+  padding-right: 50px;
+  font-family: "PT Sans";
+  font-size: 16px;
+  color: white;
+  -webkit-margin-after: unset;
+          margin-block-end: unset;
+  line-height: 50px;
+}
+/*# sourceMappingURL=index_00.css.map */

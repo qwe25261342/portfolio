@@ -1,0 +1,169 @@
+body {height: 400vh;
+  .container {
+    padding: 0;
+  }
+  .all {
+    width: 100%;
+    .navbar_out {
+      width: 100%;
+      height: 53px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      .nav_box {
+        width: 1140px;
+        display: flex;
+        .logo {
+          margin-right: 25vw;
+          margin-left: 20px;
+          .Logo_style {
+            font-size: 48px;
+            line-height: 53px;
+            font-family: "Raleway";
+            color: black;
+            text-decoration: none;
+          }
+        }
+        .navbar_text {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-right: 80px;
+
+          a {
+            color: black;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .banner_out {
+      width: 100%;
+      .banner_img {
+        background-image: url("../img/封面2.1.jpg");
+        
+        width: 100%;
+        height: 90vh;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+      }
+    }
+    .title_out {
+      width: 100%;
+      .title_box {
+        max-width: 1140px;
+        position: relative;
+        margin: auto;
+        padding-bottom: 20px;
+        .our_title {
+          font-family: "PT Sans";
+          font-size: 38px;
+          color: white;
+          position: absolute;
+          top: 30px;
+          right: 100px;
+        }
+        .story_title {
+          font-family: "PT Sans";
+          font-size: 34px;
+          color: white;
+          position: absolute;
+          top: 75px;
+          right: 45px;
+        }
+      }
+    }
+    .our_story {
+      width: 100%;
+      max-width: 1140px;
+      padding-top: 110px;
+      display: flex;
+      margin: auto;
+      .story_text {
+        padding-top: 100px;
+        font-family: "Noto Sans TC";
+        font-size: 18px;
+        color: white;
+      }
+    }
+    .title_Out {
+      width: 100%;
+      .title_Box {
+        max-width: 1140px;
+        position: relative;
+        margin: auto;
+        padding-bottom: 20px;
+        height: 150px;
+        .OUR_SURROUNDINGS_title {
+          font-family: "PT Sans";
+          font-size: 38px;
+          color: white;
+          position: absolute;
+          top: 30px;
+        }
+        .SURROUNDINGS_title {
+          font-family: "PT Sans";
+          font-size: 32px;
+          color: white;
+          position: absolute;
+          top: 75px;
+          left: 60px;
+        }
+      }
+    }
+
+    .mask {
+      &:hover {
+        background-color: rgba(0, 0, 0, 0);
+        h5 {
+          display: none;
+        }
+      }
+    }
+    .Lease_out {
+      padding-top: 100px;
+      width: 100%;
+      .Lease_img {
+        background-image: url("../img/場地預約.jpg");
+        width: 100%;
+        height: 35vh;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        .Lease_title {
+          width: 90%;
+          max-width: 1140px;
+          margin: auto;
+          font-family: "Noto Sans TC";
+          font-size: 32px;
+          color: black;
+          padding-top: 30px;
+          font-weight: bold;
+        }
+      }
+    }
+    .Lease_menu_out {
+      width: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      .Lease_menu_box {
+        width: 90%;
+        max-width: 1140px;
+
+        .Lease_menu_but {
+          a {
+            padding-right: 50px;
+            font-family: "PT Sans";
+            font-size: 16px;
+            color: white;
+            margin-block-end:unset;
+            line-height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
