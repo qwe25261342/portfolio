@@ -156,7 +156,7 @@ h1 {
   .change_view {
     .change_img {
       background-image: url(../img/轉場.png);
-      height: 40vh;
+      min-height: 40vh;
       background-size: cover;
       background-attachment: fixed;
       background-position: center center;
